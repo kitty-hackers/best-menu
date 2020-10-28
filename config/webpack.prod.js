@@ -4,6 +4,8 @@ const webpack = require('webpack');
 const common = require('./webpack.common');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
 	mode: `production`,
@@ -39,5 +41,27 @@ module.exports = {
 				],
 			},
 		],
+	},
+
+	optimization: {
+		minimize: true,
+		minimizer: [
+			// for CSS
+			new CssMinimizerPlugin(),
+			// for JS
+			new TerserPlugin(),
+		],
+		// Once your build outputs multiple chunks, this option will ensure they share the webpack runtime
+    // instead of having their own. This also helps with long-term caching, since the chunks will only
+    // change when actual code changes, not the webpack runtime.
+		runtimeChunk: {
+			name: `runtime`,
+		},
+	},
+
+	performance: {
+		hints: false,
+		maxEntrypoitSize: 512000,
+		maxAssetSize: 512000,
 	},
 };
