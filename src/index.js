@@ -1,9 +1,7 @@
 'use strict';
 
 class Game {
-	constructor() {
-		this.name = `Violin Charades`;
-	}
+	name = `Violin Charades`;
 }
 
 const myGame = new Game();
