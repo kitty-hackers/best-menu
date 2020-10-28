@@ -1,3 +1,8 @@
+:root {
+	--test-variable: #fff;
+}
+
 html, body {
 	background-color: #3a3b3f;
+	color: var(--test-variable);
 }

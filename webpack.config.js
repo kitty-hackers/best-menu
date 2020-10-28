@@ -35,7 +35,8 @@ module.exports = {
 			},
 			{
 				test: /\.css$/,
-				use: [ `style-loader`, `css-loader` ],
+				// style-loader - для dev, для prod - MiniCssExtractPlugin
+				use: [ `style-loader`, `css-loader`, `postcss-loader` ],
 			},
 		]
 	},
