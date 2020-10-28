@@ -5,12 +5,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-	entry: {
-		main: path.resolve(__dirname, `./src/index.js`),
-	},
+	entry: [ paths.src + `/index.js` ],
 
 	output: {
-		path: path.resolve(__dirname, `./dist`),
+		path: paths.build,
 		filename: `[name].bundle.js`,
 		publicPath: `/`,
 	},
@@ -36,7 +34,7 @@ module.exports = {
 		// Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
 		new HtmlWebpackPlugin({
 			title: `webpack Boilerplate`,
-			template: path.resolve(__dirname, `./src/template.html`),
+			template: `${paths.src}/template.html`,
 			filename: `index.html`,
 		}),
 	],
