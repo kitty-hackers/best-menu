@@ -6,8 +6,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack serve"
+    "build": "webpack --config config/webpack.common.js",
+    "start": "webpack serve --config config/webpack.common.js"
   },
   "keywords": [],
   "author": "",
