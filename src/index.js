@@ -3,6 +3,7 @@
 import kitty from './img/kitty.jpg';
 import woman from './img/wow_woman.svg';
 import font from './fonts/SPLENDOR_rus.ttf';
+import './styles/main.css';
 
 class Game {
 	name = `Violin Charades`;
