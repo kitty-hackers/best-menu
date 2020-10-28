@@ -1,13 +1,13 @@
 const paths = require('./paths');
 
-const webpack = require('webpack');
 const common = require('./webpack.common');
+const { merge } = require('webpack-merge');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
-module.exports = {
+module.exports = merge(common, {
 	mode: `production`,
 	
 	devtool: false,
@@ -61,7 +61,7 @@ module.exports = {
 
 	performance: {
 		hints: false,
-		maxEntrypoitSize: 512000,
+		maxEntrypointSize: 512000,
 		maxAssetSize: 512000,
 	},
-};
+});

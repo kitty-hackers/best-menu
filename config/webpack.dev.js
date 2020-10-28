@@ -2,8 +2,9 @@ const paths = require('./paths');
 
 const webpack = require('webpack');
 const common = require('./webpack.common');
+const { merge } = require('webpack-merge');
 
-module.exports = {
+module.exports = merge(common, {
 	mode: `development`,
 	
 	devtool: `inline-source-map`,
@@ -21,4 +22,4 @@ module.exports = {
 		// Only update what has changed on hot reload
 		new webpack.HotModuleReplacementPlugin(),
 	],
-};
+});
