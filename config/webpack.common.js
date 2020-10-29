@@ -33,7 +33,7 @@ module.exports = {
 		// Generates an HTML file to dist folder from template
 		// Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
 		new HtmlWebpackPlugin({
-			title: `webpack Boilerplate`,
+			title: `Webpack Boilerplate via Bargamut`,
 			template: `${paths.src}/template.html`,
 			filename: `index.html`,
 		}),

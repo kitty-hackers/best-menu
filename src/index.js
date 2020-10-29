@@ -4,8 +4,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import kitty from './img/kitty.jpg';
-import woman from './img/wow_woman.svg';
-import font from './fonts/SPLENDOR_rus.ttf';
+import woman from './img/circle.svg';
+import font from './fonts/Abibas.otf';
 import './styles/main.css';
 
 class Game {
