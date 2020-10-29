@@ -1,8 +1,8 @@
-# 📦 webpack Boilerplate
+# 📦 Webpack Boilerplate via Bargamut
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) ![David](https://img.shields.io/david/dev/bargamut/webpack-boilerplate-bargamut)
 
-Webpack 5 boilerplate with Babel, PostCSS, dev server with HMR and an optimized production build.
+Webpack boilerplate with Babel, PostCSS, dev server with HMR and an optimized production build.
 
 ## Installation
 
