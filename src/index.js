@@ -1,5 +1,8 @@
 'use strict';
 
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 import kitty from './img/kitty.jpg';
 import woman from './img/wow_woman.svg';
 import font from './fonts/SPLENDOR_rus.ttf';
