@@ -9,10 +9,10 @@ import font from './fonts/Abibas.otf';
 import './styles/main.css';
 
 class Game {
-	name = `Violin Charades`;
-	img = kitty;
-	vector = woman;
-	font = font;
+  name = `Violin Charades`;
+  img = kitty;
+  vector = woman;
+  font = font;
 }
 
 const myGame = new Game();

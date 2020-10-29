@@ -22,6 +22,14 @@ npm i
 
 ## Usage
 
+### Linting
+
+```bash
+npm run lint
+```
+
+This will start editorconfig checker for linting files
+
 ### Development server
 
 ```bash
@@ -76,6 +84,10 @@ npm run build
 - [`html-webpack-plugin`](https://github.com/jantimon/html-webpack-plugin) - Generate HTML files from template
 - [`mini-css-extract-plugin`](https://github.com/webpack-contrib/mini-css-extract-plugin) - Extract CSS into separate files
 - [`terser-webpack-plugin`](https://github.com/webpack-contrib/terser-webpack-plugin) - Optimize and minimize JavaScript
+
+### Tools
+
+- [`editorconfig-checker`](https://github.com/editorconfig-checker/editorconfig-checker) - Verifying that your files are in harmony with your .editorconfig
 
 ## Author
 
