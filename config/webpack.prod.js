@@ -57,6 +57,16 @@ module.exports = merge(common, {
 		runtimeChunk: {
 			name: `runtime`,
 		},
+		// Get all from node_modules and build it to vendors.[hash].bundle.js
+		splitChunks: {
+			cacheGroups: {
+				vendor: {
+					test: /[\\/]node_modules[\\/]/,
+					name: `vendors`,
+					chunks: `all`,
+				},
+			},
+		},
 	},
 
 	performance: {
