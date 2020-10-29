@@ -1,5 +1,6 @@
 {
-  "name": "webpack-boilerplate-bargamut",
+	"name": "webpack-boilerplate-bargamut",
+	"description": "Webpack boilerplate with Babel, PostCSS, dev server with HMR and an optimized production build",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +9,12 @@
     "build": "webpack --config config/webpack.prod.js",
     "start": "webpack serve --config config/webpack.dev.js"
   },
-  "keywords": [],
+  "keywords": [
+		"webpack",
+		"react",
+		"boilerplate",
+		"bargamut"
+	],
   "author": "",
   "license": "MIT",
   "devDependencies": {
