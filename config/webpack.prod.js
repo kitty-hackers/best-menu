@@ -57,12 +57,21 @@ module.exports = merge(common, {
 		runtimeChunk: {
 			name: `runtime`,
 		},
-		// Get all from node_modules and build it to vendors.[hash].bundle.js
+		// Get all from node_modules and build it to vendors/name-of-module.[hash].bundle.js
 		splitChunks: {
 			cacheGroups: {
 				vendor: {
 					test: /[\\/]node_modules[\\/]/,
-					name: `vendors`,
+					minSize: 0,
+					maxInitialRequests: Infinity,
+					name(module) {
+						// Get the name, e.g. node_modules/packageName/not/this/part.js
+            // or node_modules/packageName
+						const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
+
+						// Return modified name of file with replaces "@"
+						return `vendors/${packageName.replace(`@`, ``)}`;
+					},
 					chunks: `all`,
 				},
 			},
