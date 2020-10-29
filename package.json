@@ -1,7 +1,7 @@
 {
 	"name": "webpack-boilerplate-bargamut",
 	"description": "Webpack boilerplate with Babel, PostCSS, dev server with HMR and an optimized production build",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
