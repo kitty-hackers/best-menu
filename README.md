@@ -12,6 +12,14 @@ cd webpack-boilerplate-bargamut
 npm i
 ```
 
+or
+
+```
+git clone git@github.com:bargamut/webpack-boilerplate-bargamut my-project
+cd my-project
+npm i
+```
+
 ## Usage
 
 ### Development server
