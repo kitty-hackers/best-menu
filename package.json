@@ -1,7 +1,7 @@
 {
-	"name": "webpack-boilerplate-bargamut",
-	"description": "Webpack boilerplate with Babel, PostCSS, dev server with HMR and an optimized production build",
-  "version": "0.1.3",
+  "name": "webpack-boilerplate-bargamut",
+  "description": "Webpack boilerplate with Babel, PostCSS, dev server with HMR and an optimized production build",
+  "version": "0.1.4",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,11 +9,11 @@
     "start": "webpack serve --config config/webpack.dev.js"
   },
   "keywords": [
-		"webpack",
-		"react",
-		"boilerplate",
-		"bargamut"
-	],
+    "webpack",
+    "react",
+    "boilerplate",
+    "bargamut"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
