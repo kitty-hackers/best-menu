@@ -1,7 +1,7 @@
 {
   "name": "webpack-boilerplate-bargamut",
   "description": "Webpack boilerplate with Babel, PostCSS, dev server with HMR and an optimized production build",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,12 +10,22 @@
   },
   "keywords": [
     "webpack",
+    "webpack 5",
+    "webpack boilerplate",
     "react",
     "boilerplate",
     "bargamut"
   ],
-  "author": "",
-  "license": "MIT",
+  "author": {
+    "name": "Paul \"Bargamut\" Petrov",
+    "email": "paul@bargamut.ru",
+    "url": "https://bargamut.ru"
+  },
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:bargamut/webpack-boilerplate-bargamut"
+	},
   "devDependencies": {
     "@babel/core": "7.12.3",
     "@babel/plugin-proposal-class-properties": "7.12.1",

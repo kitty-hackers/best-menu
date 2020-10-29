@@ -42,7 +42,7 @@ module.exports = {
 	module: {
 		rules: [
 			// Transpile JS via Babel
-			{ test: /\.js$/, exclude: /node_modules/, use: [ `babel-loader` ], },
+			{ test: /\.(js|jsx)$/, exclude: /node_modules/, use: [ `babel-loader` ], },
 			
 			// Copy images to build folder
 			{ test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: `asset/resource`, },
@@ -61,4 +61,8 @@ module.exports = {
 			},
 		]
 	},
+
+	resolve: {
+		extensions: [ `.js`, `.jsx`, `.json` ]
+	}
 };
