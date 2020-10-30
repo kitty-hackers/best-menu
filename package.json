@@ -1,6 +1,6 @@
 {
-  "name": "webpack-boilerplate-bargamut",
-  "description": "Webpack boilerplate with Babel, PostCSS, dev server with HMR and an optimized production build",
+  "name": "best-menu",
+  "description": "Best menu application",
   "version": "0.3.0",
   "main": "index.js",
   "scripts": {
@@ -11,12 +11,8 @@
     "start": "webpack serve --config config/webpack.dev.js"
   },
   "keywords": [
-    "webpack",
-    "webpack 5",
-    "webpack boilerplate",
-    "react",
-    "boilerplate",
-    "bargamut"
+    "bargamut",
+    "best menu"
   ],
   "author": {
     "name": "Paul \"Bargamut\" Petrov",
@@ -26,7 +22,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:bargamut/webpack-boilerplate-bargamut"
+    "url": "git@github.com:kitty-hackers/best-menu"
   },
   "devDependencies": {
     "@babel/core": "7.12.3",
