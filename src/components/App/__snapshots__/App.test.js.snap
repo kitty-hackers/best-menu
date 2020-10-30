@@ -5,7 +5,7 @@ exports[`should render App snapshot 1`] = `
   className="ant-layout ant-layout-has-sider site"
 >
   <aside
-    className="ant-layout-sider ant-layout-sider-dark"
+    className="ant-layout-sider ant-layout-sider-dark site-sider"
     style={
       Object {
         "flex": "0 0 200px",
@@ -18,7 +18,44 @@ exports[`should render App snapshot 1`] = `
     <div
       className="ant-layout-sider-children"
     >
-      Sider
+      <ul
+        className="ant-menu ant-menu-dark ant-menu-root ant-menu-vertical"
+        onMouseEnter={[Function]}
+        onTransitionEnd={[Function]}
+        role="menu"
+        style={Object {}}
+      >
+        <li
+          className="ant-menu-item ant-menu-item-only-child"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="menuitem"
+          style={Object {}}
+        >
+          Завтрак
+        </li>
+        <li
+          className="ant-menu-item ant-menu-item-only-child"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="menuitem"
+          style={Object {}}
+        >
+          Обед
+        </li>
+        <li
+          className="ant-menu-item ant-menu-item-only-child"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="menuitem"
+          style={Object {}}
+        >
+          Ужин
+        </li>
+      </ul>
     </div>
   </aside>
   <section
@@ -27,7 +64,16 @@ exports[`should render App snapshot 1`] = `
     <header
       className="ant-layout-header"
     >
-      Header
+      <h1
+        className="ant-typography"
+        style={
+          Object {
+            "WebkitLineClamp": null,
+          }
+        }
+      >
+        Best Menu
+      </h1>
     </header>
     <main
       className="ant-layout-content"
@@ -37,7 +83,7 @@ exports[`should render App snapshot 1`] = `
     <footer
       className="ant-layout-footer"
     >
-      Footer
+      Kitty-Hackers © 2020 Created by Bargamut
     </footer>
   </section>
 </section>

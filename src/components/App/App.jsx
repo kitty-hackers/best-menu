@@ -1,20 +1,35 @@
 'use strict';
 
-import { Layout } from 'antd';
+import { Layout, Menu, Typography } from 'antd';
 import * as React from 'react';
 
 const { Header, Sider, Content, Footer } = Layout;
+const { Title } = Typography;
 
 function App() {
   return (
     <>
       <Layout className="site">
-        <Sider>Sider</Sider>
+        <Sider
+          className="site-sider"
+          breakpoint="lg"
+          collapsedWidth="0"
+        >
+          <Menu theme="dark">
+            <Menu.Item key="1">Завтрак</Menu.Item>
+            <Menu.Item key="2">Обед</Menu.Item>
+            <Menu.Item key="3">Ужин</Menu.Item>
+          </Menu>
+        </Sider>
 
         <Layout>
-          <Header>Header</Header>
+          <Header>
+            <Title>Best Menu</Title>
+          </Header>
+
           <Content>Content</Content>
-          <Footer>Footer</Footer>
+
+          <Footer>Kitty-Hackers &copy; 2020 Created by Bargamut</Footer>
         </Layout>
       </Layout>
     </>
