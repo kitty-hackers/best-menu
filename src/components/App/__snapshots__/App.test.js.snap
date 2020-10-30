@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render App snapshot 1`] = `
+<section
+  className="ant-layout ant-layout-has-sider site"
+>
+  <aside
+    className="ant-layout-sider ant-layout-sider-dark"
+    style={
+      Object {
+        "flex": "0 0 200px",
+        "maxWidth": "200px",
+        "minWidth": "200px",
+        "width": "200px",
+      }
+    }
+  >
+    <div
+      className="ant-layout-sider-children"
+    >
+      Sider
+    </div>
+  </aside>
+  <section
+    className="ant-layout"
+  >
+    <header
+      className="ant-layout-header"
+    >
+      Header
+    </header>
+    <main
+      className="ant-layout-content"
+    >
+      Content
+    </main>
+    <footer
+      className="ant-layout-footer"
+    >
+      Footer
+    </footer>
+  </section>
+</section>
+`;
